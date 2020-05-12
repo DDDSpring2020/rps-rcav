@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   
   get("/paper", { :controller => "application", :action => "play_paper"})
 
-  get("/scissor", { :controller => "application", :action => "play_scissor"})
+  get("/scissors", { :controller => "application", :action => "play_scissors"})
 
 end
 

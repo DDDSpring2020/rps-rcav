@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>You played rock!</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <div><a href="/rock">Play Rock</a></div>
+    <div><a href="/paper">Play Paper</a></div>
+    <div><a href="/scissors">Play Scissors</a></div>
+   
+    <h2>We played rock!</h2>
+    
+    <%# DYNAMIC RUBY %>
+    <% moves = ["rock", "paper", "scissors"] %>
+    <% comp_move = moves.sample %>
+
+    <h2>They played <%= comp_move %>!</h2>
+
+    <% if comp_move == "rock" %>
+    <% outcome = "tied" %>
+    <% elsif comp_move == "paper" %>
+    <% outcome = "lost" %>
+    <% else %>
+    <% outcome = "won" %>
+    <% end %>
+
+    <h2> We <%= outcome %>!</h2>>
+
+    <%# UNCLEAR %>
+    <a href="/" > Rules</a>
+  </body>
+</html>
+
